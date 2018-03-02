@@ -1,0 +1,42 @@
+@media all and (min-width: 993px) {
+
+	#container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.produkt {
+		flex-basis: 45%;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 992px) {
+	#container {
+		width: 100%;
+	}
+	
+	.produkt {
+		width: 40%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	body {
+		overflow: visible;
+		height: 1000px;
+	}
+	
+	#container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.produkt {
+		height: 300px;
+		width: auto;
+		transform: translateY(60%);
+		margin: 10px;
+		display: block;
+	}	
+}
